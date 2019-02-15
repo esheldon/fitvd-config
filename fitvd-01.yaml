@@ -69,11 +69,16 @@ mof:
             maxval: 3.0
 
     psf:
-        model: 'coellip3'
-
         ntry: 4
+        #model: 'coellip3'
+        #lm_pars:
+        #    maxfev: 2000
+        #    ftol: 1.0e-5
+        #    xtol: 1.0e-5
 
-        lm_pars:
-            maxfev: 2000
-            ftol: 1.0e-5
-            xtol: 1.0e-5
+        model: 'em3'
+
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
+
