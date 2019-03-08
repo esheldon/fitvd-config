@@ -1,0 +1,99 @@
+# for deep field processing
+parspace: 'ngmix'
+
+hst_band: null
+
+# usually this is to skip the coadd
+skip_first_epoch:  False
+
+weight_type: 'circular-mask'
+
+# in the coadds only bit 0 is set, which basically means don't
+# use the pixel.  Since we work by name we need to put BPM here
+# for that
+
+image_flagnames_to_mask: [
+    BPM,
+]
+
+# this is before adding additional masking, e.g. circular mask
+max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.
+# this is only checked in _set_weight, if the weight map
+# is being modified, e.g. circular mask
+min_npix: 9
+
+fofs:
+    method: 'radius'
+    check_seg: false
+
+    # name in meds file, or catalog if method is catalog_radius
+    #radius_column: "iso_radius_arcsec"
+    radius_column: "iso_radius"
+
+    # factor to multiply radius this happens before clipping to [min_radius,
+    # max_radius] for a low threshold, the isoarea is basically covering all
+    # the observed flux, so mult of 1 makes sense
+    radius_mult: 1.0
+
+    # clip the radius in pixels=sqrt(isoarea_image/pi)
+    # 5 pixels is about 3 sigma for a 1'' FWHM gaussian
+    # this happens after the radius_mult is applied
+    min_radius_arcsec: 1.0
+    #max_radius_arcsec: null
+    max_radius_arcsec: 2.0
+
+    # This is added to the radius. This kind of padding makes sense for radii
+    # based on the iso area.  Padding happens after mult and clipping
+    padding_arcsec: 0.5
+
+    # arcsec
+    #extra_psf_fwhm_arcsec: 1.0
+    extra_psf_fwhm_arcsec: 0.0
+
+mof:
+
+    model: 'bdf'
+
+    # for guesses
+    detband: 0
+   
+    priors:
+        cen:
+            type: 'normal2d'
+            sigma: 0.263
+
+        g:
+            type: 'ba'
+            sigma: 0.2
+
+        T:
+            type: 'flat'
+            pars: [-1.0, 1.0e+09]
+
+        flux:
+            type: 'flat'
+            pars: [-1000.0, 1.0e+09]
+
+        fracdev:
+            type: 'truncated-normal'
+            mean: 0.5
+            sigma: 0.1
+            minval: -2.0
+            maxval: 3.0
+
+    psf:
+        ntry: 4
+        #model: 'coellip3'
+        #lm_pars:
+        #    maxfev: 2000
+        #    ftol: 1.0e-5
+        #    xtol: 1.0e-5
+
+        model: 'em3'
+
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
+

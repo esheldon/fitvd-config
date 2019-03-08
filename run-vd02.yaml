@@ -1,0 +1,12 @@
+seed: 1762
+chunksize: 100
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-01.yaml'
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 10000
+
+
+# for condor
+jobs_per_sub: 100
