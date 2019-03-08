@@ -50,6 +50,7 @@ tilenames: [
     SN-C3_C35_r3688p01,
     SN-C3_C36_r3688p01,
     SN-C3_C37_r3688p01,
+    # no cutouts in some video bands
     SN-C3_C38_r3688p01,
     SN-C3_C39_r3688p01,
     SN-C3_C40_r3688p01,
