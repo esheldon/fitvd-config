@@ -1,6 +1,4 @@
-# this is meant to be run on DES ugrizY and VIDEO JHKs
-# note detband is 2 meaning r band for the size guess
-
+# test for wide field processing, using SE images
 parspace: 'ngmix'
 
 hst_band: null
