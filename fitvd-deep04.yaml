@@ -1,4 +1,5 @@
 # for deep field processing
+# sinh fracdev prior
 parspace: 'ngmix'
 
 hst_band: null
