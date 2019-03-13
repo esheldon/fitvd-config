@@ -1,3 +1,6 @@
+Note there might be astrometry issue that could cause some
+of the failures
+
 fracdev priors
 
     run-v04
@@ -40,3 +43,7 @@ fracdev priors
             - comparable to the exp model, so maybe this is important
 
         - if this works, should maybe try with fracdev just normal
+
+    run-vdfdz01
+        - prior centered at zero for fracdev
+        2.4%
