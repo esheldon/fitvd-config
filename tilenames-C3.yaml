@@ -1,12 +1,6 @@
 des_pattern: '$MEDS_DIR/vd01/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.fits.fz'
 video_pattern: '$MEDS_DIR/vd01/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEEP.fits.fz'
 
-des_bands: [u, g, r, i, z, Y]
-video_bands: [J, H, Ks]
-
-# meds file to use for FoF finding
-fof_band: 2
-
 # temporarily commenting stuff that has already been processed
 tilenames: [
     # finished
