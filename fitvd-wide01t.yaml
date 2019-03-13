@@ -4,7 +4,7 @@ parspace: 'ngmix'
 hst_band: null
 
 # usually this is to skip the coadd
-skip_first_epoch:  False
+skip_first_epoch:  True
 
 weight_type: 'circular-mask'
 
