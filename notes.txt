@@ -44,6 +44,10 @@ fracdev priors
 
         - if this works, should maybe try with fracdev just normal
 
+    run-dtcen01
+        - same as vdtcen01 but des only
+        - 2.0% failure
+
     run-vdfdz01
         - prior centered at zero for fracdev
         2.4%
