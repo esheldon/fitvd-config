@@ -13,7 +13,22 @@ fracdev priors
         and this is not that uncommon
 
     run-v06
-        - fracdev prior sinh, looks quite similar to v04 in magdiff
+        - fracdev prior sinh scale 0.2, looks quite similar to v04 in magdiff
         failure a bit better than v04
         failure with object_flags 3.0% in C09
 
+    run-v07
+        - fracdev prior sinh scale 0.1
+        failure with object_flags 3.4% in C09
+
+    run-v08
+        - fracdev prior sinh scale 0.3
+        failure with object_flags 3.2% in C09
+
+    run-vdexp01
+        - exp
+        2.3% failures of object_flags
+
+    run-vdexp02
+        - exp ,shifted log-normal T
+        2.8% failures of object_flags
