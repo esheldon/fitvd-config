@@ -32,3 +32,11 @@ fracdev priors
     run-vdexp02
         - exp ,shifted log-normal T
         2.8% failures of object_flags
+
+    run-vdtcen01
+        - fitvd-tcen01 bdf model, but with
+              cen prior sigma 0.05 (rather than 0.263 as usual)
+        - 2.7% failures of object_flags
+            - comparable to the exp model, so maybe this is important
+
+        - if this works, should maybe try with fracdev just normal
