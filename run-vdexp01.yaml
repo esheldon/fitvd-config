@@ -1,0 +1,16 @@
+# note tiles are still send on the command line, so we can process
+# different tiles as we see fit within the same run
+
+seed: 3005
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-exp01.yaml'
+
+# nominal chunksize
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+# for condor
+jobs_per_sub: 100
