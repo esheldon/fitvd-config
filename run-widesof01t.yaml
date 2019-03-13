@@ -1,0 +1,22 @@
+# note tiles are still send on the command line, so we can process
+# different tiles as we see fit within the same run
+
+seed: 1692
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-widesof01t.yaml'
+
+# nominal chunksize
+chunksize: 250
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+des_bands: [g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100

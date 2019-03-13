@@ -39,39 +39,7 @@ min_npix: 9
 #    # multiply the radius in the mask by this factor
 #    rad_mult: 1.5
 
-# There is also a radius_column in the fofs, but we
-# we need this for other calculations even if not
-# doing fof group finding
-
 radius_column: "iso_radius"
-
-fofs:
-    method: 'radius'
-    check_seg: false
-
-    # name in meds file, or catalog if method is catalog_radius
-    #radius_column: "iso_radius_arcsec"
-    radius_column: "iso_radius"
-
-    # factor to multiply radius this happens before clipping to [min_radius,
-    # max_radius] for a low threshold, the isoarea is basically covering all
-    # the observed flux, so mult of 1 makes sense
-    radius_mult: 1.0
-
-    # clip the radius in pixels=sqrt(isoarea_image/pi)
-    # 5 pixels is about 3 sigma for a 1'' FWHM gaussian
-    # this happens after the radius_mult is applied
-    min_radius_arcsec: 1.0
-    #max_radius_arcsec: null
-    max_radius_arcsec: 2.0
-
-    # This is added to the radius. This kind of padding makes sense for radii
-    # based on the iso area.  Padding happens after mult and clipping
-    padding_arcsec: 0.5
-
-    # arcsec
-    #extra_psf_fwhm_arcsec: 1.0
-    extra_psf_fwhm_arcsec: 0.0
 
 mof:
 
