@@ -51,3 +51,31 @@ fracdev priors
     run-vdfdz01
         - prior centered at zero for fracdev
         2.4%
+
+wide field
+----------
+- run-wide01t
+    - fitvd-wide01t
+    - full deblending
+    - circular mask
+- run-wide02t
+    - fitvd-wide02t
+    - full deblending
+    - uberseg
+    - rerunning
+
+- run-widesof01t
+    - fitvd-widesof01t
+    - no deblending
+    - circular mask
+    - mags strongly skewed compared to deblending run wide01t
+
+- run-widesof02t
+    - fitvd-widesof02t
+    - no deblending
+    - ubserseg
+    - huge number of high maskfrac cuts; probably the 0.45
+      should not include the uberseg mask, ugh
+      rerunning
+    - agrees much better with deblending run wide01t
+
