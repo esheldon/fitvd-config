@@ -77,3 +77,24 @@ wide field
     - agrees better with deblending run wide01t
     - agrees best with deblending with uberseg, wide02t
 
+- run-widefdz01t
+    - fitvd-widefdz02t
+    - fracdev prior centered at zero
+    - full deblending
+    - uberseg
+    - whoops, bad guesses, but might beok
+    - hmm.offsets [0.009, 0.012, 0.014, 0.021]
+    - failures are similar
+    - the number of objects with fracdev < 0 is nearly half.  This might be ok
+      but it worries me a bit
+
+- run-widefdz02t
+    - same as run-widefdz01t but fixed guess
+    - even more than half with fracdev < 0 now
+    - also larger offsets from fiducial run
+                  [0.015, 0.015, 0.019, 0.025]
+      medians still small though
+
+- we think most faint galaxies look more like disks than bulges
+- the prior should be closer to 0 than 1
+- where should it be?  0.1 +/- 0.1 ?
