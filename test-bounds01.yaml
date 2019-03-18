@@ -1,0 +1,115 @@
+# uberseg
+parspace: 'ngmix'
+
+inject:
+    do_inject: False
+    model: bdf
+    #flux: 1.0e+02
+    flux: 1.0e+04
+    #flux:
+    #    type: uniform
+    #    range: [1.0e+02, 1.0e+04]
+
+    hlr: 0.5
+    #hlr:
+    #    type: uniform
+    #    range: [0.1, 1.0]
+
+    #fracdev: 1.0
+    #fracdev: 0.0
+    fracdev:
+        type: uniform
+        range: [0.0, 1.0]
+
+    dev_hlr_ratio: 0.5
+
+    psf:
+        fwhm: 0.9
+
+hst_band: null
+
+# usually this is to skip the coadd
+skip_first_epoch:  True
+
+weight_type: 'uberseg'
+
+# in the coadds only bit 0 is set, which basically means don't
+# use the pixel.  Since we work by name we need to put BPM here
+# for that
+
+image_flagnames_to_mask: [
+    BPM,
+    SATURATE,
+    INTERP,
+    BADAMP,
+    CRAY,
+    TRAIL,
+    EDGEBLEED,
+    EDGE,
+    STREAK,
+    NEAREDGE,
+    TAPEBUMP,
+]
+
+
+# this is before adding additional masking, e.g. circular mask
+# does not apply for uberseg
+#max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.  this is only
+# checked if using uberseg, or in _set_weight, if the weight map is being
+# modified, e.g. circular mask
+min_npix: 9
+
+#mask:
+#    # multiply the radius in the mask by this factor
+#    rad_mult: 1.5
+
+radius_column: "iso_radius"
+
+mof:
+
+    model: 'bdf'
+
+    # for guesses
+    detband: 0
+   
+    priors:
+        # this makes no difference to fracdev
+        cen:
+            type: 'normal2d'
+            #sigma: 0.05
+            sigma: 0.263
+
+        g:
+            type: 'ba'
+            sigma: 0.2
+
+        # flat for T works better than bounds,
+        # not sure why
+        T:
+            #type: 'flat'
+            type: 'bounds'
+            #pars: [-1.0, 1.0e+09]
+            pars: [-1.0, 10000.0]
+
+        flux:
+            type: 'flat'
+            #type: 'bounds'
+            pars: [-1000.0, 1.0e+09]
+
+        fracdev:
+            type: 'normal'
+            mean: 0.5
+            sigma: 0.1
+            bounds: [0.0, 1.0]
+
+    psf:
+        ntry: 4
+
+        model: 'em3'
+
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
+
