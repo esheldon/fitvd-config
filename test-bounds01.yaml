@@ -85,18 +85,13 @@ mof:
             type: 'ba'
             sigma: 0.2
 
-        # flat for T works better than bounds,
-        # not sure why
         T:
-            #type: 'flat'
             type: 'bounds'
-            #pars: [-1.0, 1.0e+09]
             pars: [-1.0, 10000.0]
 
         flux:
-            type: 'flat'
-            #type: 'bounds'
-            pars: [-1000.0, 1.0e+09]
+            type: 'bounds'
+            pars: [-100.0, 1.0e+07]
 
         fracdev:
             type: 'normal'
