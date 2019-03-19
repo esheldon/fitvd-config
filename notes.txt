@@ -64,6 +64,11 @@ wide field
     - uberseg
     - some 0.02 level mag differences showing up
 
+- run-wide03t
+    - fitvd-wide03t
+    - same as wide02t but better bounds handling, fracdev [0,1]
+
+
 - run-widesof01t
     - fitvd-widesof01t
     - no deblending
@@ -76,6 +81,10 @@ wide field
     - ubserseg
     - agrees better with deblending run wide01t
     - agrees best with deblending with uberseg, wide02t
+
+- run-widesof03t
+    - fitvd-widesof03t
+    - same as widesof03t but better bounds handling, fracdev [0,1]
 
 - run-widefdz01t
     - fitvd-widefdz02t
