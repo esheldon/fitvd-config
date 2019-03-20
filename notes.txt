@@ -3,11 +3,11 @@ of the failures
 
 fracdev priors
 
-    run-v04
+    run-vd04
         - fracdev truncated norm, very liberal
         failure with object_flags 3.2% in C09
 
-    run-v05
+    run-vd05
         - fracdev truncated norm [0,1] far fewer failures but
         magdiff with v04 skewed
         failure with object_flags 0.9% in C09
@@ -15,16 +15,16 @@ fracdev priors
         Also seems to get stuck more in a local minimum at e.g. fracdev=1
         and this is not that uncommon
 
-    run-v06
+    run-vd06
         - fracdev prior sinh scale 0.2, looks quite similar to v04 in magdiff
         failure a bit better than v04
         failure with object_flags 3.0% in C09
 
-    run-v07
+    run-vd07
         - fracdev prior sinh scale 0.1
         failure with object_flags 3.4% in C09
 
-    run-v08
+    run-vd08
         - fracdev prior sinh scale 0.3
         failure with object_flags 3.2% in C09
 
@@ -51,6 +51,12 @@ fracdev priors
     run-vdfdz01
         - prior centered at zero for fracdev
         2.4%
+
+    run-d02
+        - fitvd-deep07
+        - griz only
+        - fracdev normal 0.5/0.1 with [0,1] bounds
+        - cen 0.05
 
 wide field
 ----------
