@@ -1,0 +1,20 @@
+seed: 1692
+
+# bounded normal fracdev prior
+fit_config: '$FITVD_CONFIG_DIR/fitvd-deep07.yaml'
+
+# nominal chunksize
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+des_bands: [g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
