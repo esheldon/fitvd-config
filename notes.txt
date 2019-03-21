@@ -74,6 +74,11 @@ wide field
     - fitvd-wide03t
     - same as wide02t but better bounds handling, fracdev [0,1]
 
+- run-wide04t
+    - fitvd-wide04t
+    - added outlier rejection, cut if cen is masked, very tight cen bounds, no
+      bounds on fracdev, fracdev prior gauss 0.5/0.3, flat 
+
 
 - run-widesof01t
     - fitvd-widesof01t
