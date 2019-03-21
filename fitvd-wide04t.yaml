@@ -103,12 +103,10 @@ mof:
             sigma: 0.2
 
         T:
-            #type: 'flat'
             type: 'bounds'
             pars: [-1.0, 10000.0]
 
         flux:
-            #type: 'flat'
             type: 'bounds'
             pars: [-100.0, 1.0e+07]
 
