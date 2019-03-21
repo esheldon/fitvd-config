@@ -82,6 +82,8 @@ wide field
         - very tight cen bounds
         - no bounds on fracdev
         - fracdev prior gauss 0.5/0.3
+        - flat T/flux bounds
+        - in code fixing bad flux guesses
 
 next may want to add trimming of stamps
 
