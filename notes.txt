@@ -84,6 +84,8 @@ wide field
         - fracdev prior gauss 0.5/0.3
         - flat T/flux bounds
         - in code fixing bad flux guesses
+        + probably want to add bounds on fracdev at [-3,4]
+        + may want to try also without trimming and without outlier rejections
 
 next may want to add trimming of stamps
 

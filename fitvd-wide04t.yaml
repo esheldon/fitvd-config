@@ -118,6 +118,7 @@ mof:
             type: 'normal'
             mean: 0.5
             sigma: 0.3
+            bounds: [-3.0, 4.0]
 
     psf:
         ntry: 4
