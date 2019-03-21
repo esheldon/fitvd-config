@@ -8,13 +8,13 @@ skip_first_epoch:  True
 
 weight_type: 'uberseg'
 
-#trim_images:
-#    min_size: 20
-#    max_size: 48
+trim_images:
+    min_size: 32
+    max_size: 64
 
 # ensure a box with specified radius is unmasked
-cut_masked_center:
-    radius_pixels: 3.0
+#cut_masked_center:
+#    radius_pixels: 3.0
 
 reject_outliers: True
 
