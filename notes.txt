@@ -80,12 +80,10 @@ wide field
         - outlier rejection
         - trim images to [32, 64]
         - very tight cen bounds
-        - no bounds on fracdev
         - fracdev prior gauss 0.5/0.3
+            - loose bounds on fracdev [-3,4]
         - flat T/flux bounds
         - in code fixing bad flux guesses
-        + probably want to add bounds on fracdev at [-3,4]
-        + may want to try also without trimming and without outlier rejections
 
 next may want to add trimming of stamps
 
@@ -105,6 +103,9 @@ next may want to add trimming of stamps
 - run-widesof03t
     - fitvd-widesof03t
     - same as widesof03t but better bounds handling, fracdev [0,1]
+- run-widesof04t
+    - fitvd-widesof04t
+    - same as fitvd-wide04t but without FoF group finding
 
 - run-widefdz01t
     - fitvd-widefdz02t
