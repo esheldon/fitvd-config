@@ -3,11 +3,11 @@ of the failures
 
 fracdev priors
 
-    run-v04
+    run-vd04
         - fracdev truncated norm, very liberal
         failure with object_flags 3.2% in C09
 
-    run-v05
+    run-vd05
         - fracdev truncated norm [0,1] far fewer failures but
         magdiff with v04 skewed
         failure with object_flags 0.9% in C09
@@ -15,16 +15,16 @@ fracdev priors
         Also seems to get stuck more in a local minimum at e.g. fracdev=1
         and this is not that uncommon
 
-    run-v06
+    run-vd06
         - fracdev prior sinh scale 0.2, looks quite similar to v04 in magdiff
         failure a bit better than v04
         failure with object_flags 3.0% in C09
 
-    run-v07
+    run-vd07
         - fracdev prior sinh scale 0.1
         failure with object_flags 3.4% in C09
 
-    run-v08
+    run-vd08
         - fracdev prior sinh scale 0.3
         failure with object_flags 3.2% in C09
 
@@ -52,6 +52,12 @@ fracdev priors
         - prior centered at zero for fracdev
         2.4%
 
+    run-d02
+        - fitvd-deep07
+        - griz only
+        - fracdev normal 0.5/0.1 with [0,1] bounds
+        - cen 0.05
+
 wide field
 ----------
 - run-wide01t
@@ -63,6 +69,23 @@ wide field
     - full deblending
     - uberseg
     - some 0.02 level mag differences showing up
+
+- run-wide03t
+    - fitvd-wide03t
+    - same as wide02t but better bounds handling, fracdev [0,1]
+
+- run-wide04t
+    - fitvd-wide04t
+    - added
+        - outlier rejection
+        - trim images to [32, 64]
+        - very tight cen bounds
+        - fracdev prior gauss 0.5/0.3
+            - loose bounds on fracdev [-3,4]
+        - flat T/flux bounds
+        - in code fixing bad flux guesses
+
+next may want to add trimming of stamps
 
 - run-widesof01t
     - fitvd-widesof01t
@@ -76,6 +99,13 @@ wide field
     - ubserseg
     - agrees better with deblending run wide01t
     - agrees best with deblending with uberseg, wide02t
+
+- run-widesof03t
+    - fitvd-widesof03t
+    - same as widesof03t but better bounds handling, fracdev [0,1]
+- run-widesof04t
+    - fitvd-widesof04t
+    - same as fitvd-wide04t but without FoF group finding
 
 - run-widefdz01t
     - fitvd-widefdz02t
