@@ -128,3 +128,28 @@ next may want to add trimming of stamps
 - we think most faint galaxies look more like disks than bulges
 - the prior should be closer to 0 than 1
 - where should it be?  0.1 +/- 0.1 ?
+
+# full bulge disk
+
+- run-bd01t
+    - fitvd-bd01t
+    - full bulge+disk with prior on logTratio
+    - fracdev [0,1]
+    - fails for cluster example
+    ! argh used coellip3
+    - on test tile, which has a higher than usual failure
+    rate anyway, seeing obj_failure 0.00932007 which is way high
+    
+- run-bd02t
+    - fitvd-bd02t
+    - fracdev [-4,3]
+    - fails for cluster example
+    ! argh used coellip3
+    - obj_failure 0.0010037
+ 
+- run-bd03t
+    - fitvd-bd02t
+    - fracdev [-0.25, 2.2]
+    - fails for cluster example
+    ! argh used coellip3
+    - obj_failure 0.00136216
