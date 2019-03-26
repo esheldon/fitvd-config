@@ -85,6 +85,9 @@ wide field
         - flat T/flux bounds
         - in code fixing bad flux guesses
 
+- run-wide05t
+    - test with different TdByTe, don't use
+
 - run-wide06t
     - fitvd-wide04t
     - added
