@@ -81,9 +81,21 @@ wide field
         - trim images to [32, 64]
         - very tight cen bounds
         - fracdev prior gauss 0.5/0.3
+            - bounds on fracdev [-0.18, 2.0] safe for TdByTe=1
+        - flat T/flux bounds
+        - in code fixing bad flux guesses
+
+- run-wide06t
+    - fitvd-wide04t
+    - added
+        - outlier rejection
+        - trim images to [32, 64]
+        - very tight cen bounds
+        - fracdev prior gauss 0.5/0.3
             - loose bounds on fracdev [-3,4]
         - flat T/flux bounds
         - in code fixing bad flux guesses
+
 
 next may want to add trimming of stamps
 
@@ -139,6 +151,10 @@ next may want to add trimming of stamps
     ! argh used coellip3
     - on test tile, which has a higher than usual failure
     rate anyway, seeing obj_failure 0.00932007 which is way high
+
+- run-sofbd01t
+    - fitvd-sofbd01t
+    - obj_failure 0.88% not much better
     
 - run-bd02t
     - fitvd-bd02t
