@@ -1,0 +1,22 @@
+# uberseg
+# bounds on fracdev
+
+seed: 1692
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-wide04t2.yaml'
+
+# nominal chunksize
+chunksize: 250
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+des_bands: [g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
