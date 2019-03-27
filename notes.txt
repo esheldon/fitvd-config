@@ -58,6 +58,15 @@ fracdev priors
         - fracdev normal 0.5/0.1 with [0,1] bounds
         - cen 0.05
 
+    run-d03
+        - fitvd-d03
+        - similar to run-wide04t for wide field
+        - griz only
+        - trimming images
+        - fracdev normal 0.5/0.3 with [-3,4] bounds
+        - cen 0.001
+
+
 wide field
 ----------
 - run-wide01t
@@ -90,14 +99,16 @@ wide field
 
 - run-wide06t
     - fitvd-wide04t
-    - added
-        - outlier rejection
-        - trim images to [32, 64]
-        - very tight cen bounds
-        - fracdev prior gauss 0.5/0.3
-            - bounds on fracdev [-0.18, 2.0] safe for TdByTe=1
-        - flat T/flux bounds
-        - in code fixing bad flux guesses
+    - fracdev prior gauss 0.5/0.3
+        - bounds on fracdev [-0.18, 2.0] safe for TdByTe=1
+        - crazy high failure rate
+
+- run-wide04t2
+    - rerunning wide04t with new code to make sure still works ok
+    - if looks ok, need to figure out why wide06t failed so bad
+        - fracdev bounds
+            - maybe there are real negative pixels its trying to fit?
+        - coellip psf (seems unlikely)
 
 
 next may want to add trimming of stamps
