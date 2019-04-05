@@ -93,6 +93,12 @@ wide field
             - loose bounds on fracdev [-3,4]
         - flat T/flux bounds
         - in code fixing bad flux guesses
+- run-rad01t
+   - fitvd-rad01t
+   - same as wide04t but with twice the maximum allowed radius
+     very little change except that it runs slower and there
+     are more failures
+
 
 - run-wide05t
     - test with different TdByTe, don't use
