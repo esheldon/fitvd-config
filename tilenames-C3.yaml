@@ -3,7 +3,6 @@ video_pattern: '$MEDS_DIR/vd01/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEE
 
 # temporarily commenting stuff that has already been processed
 tilenames: [
-    # finished
     SN-C3_C01_r3688p01,
     SN-C3_C02_r3688p01,
     SN-C3_C03_r3688p01,
@@ -26,14 +25,11 @@ tilenames: [
     SN-C3_C20_r3688p01,
     SN-C3_C21_r3688p01,
     SN-C3_C22_r3688p01,
-    # finished
     SN-C3_C23_r3688p01,
     SN-C3_C24_r3688p01,
     SN-C3_C25_r3688p01,
     SN-C3_C26_r3688p01,
-    # finished
     SN-C3_C27_r3688p01,
-    # finished
     SN-C3_C28_r3688p01,
     SN-C3_C29_r3688p01,
     SN-C3_C30_r3688p01,
@@ -44,7 +40,6 @@ tilenames: [
     SN-C3_C35_r3688p01,
     SN-C3_C36_r3688p01,
     SN-C3_C37_r3688p01,
-    # no cutouts in some video bands
     SN-C3_C38_r3688p01,
     SN-C3_C39_r3688p01,
     SN-C3_C40_r3688p01,

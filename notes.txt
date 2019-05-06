@@ -1,3 +1,11 @@
+SN etc. fields
+------------
+run-vd09
+    - fitvd-deep08
+    - ugrizY JHKs
+
+
+
 Note there might be astrometry issue that could cause some
 of the failures
 
