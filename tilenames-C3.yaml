@@ -1,5 +1,5 @@
-des_pattern: '$MEDS_DIR/vd01/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.fits.fz'
-video_pattern: '$MEDS_DIR/vd01/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEEP.fits.fz'
+des_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.fits.fz'
+video_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEEP.fits.fz'
 
 # temporarily commenting stuff that has already been processed
 tilenames: [

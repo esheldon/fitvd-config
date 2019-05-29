@@ -101,6 +101,7 @@ wide field
             - loose bounds on fracdev [-3,4]
         - flat T/flux bounds
         - in code fixing bad flux guesses
+
 - run-rad01t
    - fitvd-rad01t
    - same as wide04t but with twice the maximum allowed radius
@@ -124,6 +125,10 @@ wide field
             - maybe there are real negative pixels its trying to fit?
         - coellip psf (seems unlikely)
 
+- run-wide07t
+    - fitvd-wide07t
+    - same as fitvd-wide04t but with fracdev bounds [0, 1]
+      and sigma 0.1
 
 next may want to add trimming of stamps
 
