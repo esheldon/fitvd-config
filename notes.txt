@@ -4,6 +4,19 @@ run-vd09
     - fitvd-deep08
     - ugrizY JHKs
 
+run-vd12
+    - fitvd-vd12
+    - griz only with circular mask (should have named it fitvd-des*)
+
+run-desuseg01
+    - fitvd-desuseg01
+    - griz only with uberseg
+
+run-desusegmask01
+    - fitvd-desusemaskg01
+    - griz only with uberseg and star mask preventing masked objects
+      being part of a group
+
 
 
 Note there might be astrometry issue that could cause some
