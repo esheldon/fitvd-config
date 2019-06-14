@@ -17,6 +17,20 @@ run-desusegmask01
     - griz only with uberseg and star mask preventing masked objects
       being part of a group
 
+run-dessof01
+    - fitvd-dessof01
+    - griz sof run
+    - need to run on more than 3 tiles
+
+run-vdff01
+    - fitvd-vdff01
+    - using dessof01 for forced photometry deblending
+    - super high failure rate, 10%
+
+run-vdsof01
+    - fitvd-vdsof01
+    - ugrizYJHKs sof run
+    - need to run on more than 3 tiles
 
 
 Note there might be astrometry issue that could cause some
