@@ -3,7 +3,6 @@ video_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEE
 
 tilenames: [
     SN-E2_C01_r3688p02,
-    SN-E2_C02_r3688p02,
     SN-E2_C03_r3688p02,
     SN-E2_C04_r3688p02,
     SN-E2_C05_r3688p02,
@@ -32,7 +31,6 @@ tilenames: [
     SN-E2_C28_r3688p02,
     SN-E2_C29_r3688p02,
     SN-E2_C30_r3688p02,
-    SN-E2_C31_r3688p02,
     SN-E2_C32_r3688p02,
     SN-E2_C33_r3688p02,
     SN-E2_C34_r3688p02,
