@@ -3,38 +3,38 @@ video_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEE
 
 tilenames: [
     SN-C3_C01_r3688p01,
-    SN-C3_C03_r3688p01,
+    # SN-C3_C03_r3688p01,  # scattered light
     SN-C3_C04_r3688p01,
-    SN-C3_C05_r3688p01,
+    # SN-C3_C05_r3688p01,  # odd trails in one direction
     SN-C3_C06_r3688p01,
     SN-C3_C07_r3688p01,
-    SN-C3_C08_r3688p01,
+    # SN-C3_C08_r3688p01,  # scattered light on half
     SN-C3_C09_r3688p01,
     SN-C3_C10_r3688p01,
     SN-C3_C11_r3688p01,
     SN-C3_C12_r3688p01,
     SN-C3_C13_r3688p01,
     SN-C3_C14_r3688p01,
-    SN-C3_C15_r3688p01,
+    # SN-C3_C15_r3688p01,  # bad cross talk near amp divide
     SN-C3_C16_r3688p01,
     SN-C3_C17_r3688p01,
-    SN-C3_C18_r3688p01,
+    #  SN-C3_C18_r3688p01, # bad cross talk near amp divide/sky/scattered light
     SN-C3_C19_r3688p01,
     SN-C3_C20_r3688p01,
-    SN-C3_C21_r3688p01,
-    SN-C3_C22_r3688p01,
+    # SN-C3_C21_r3688p01,  # scattered light half, bad sky
+    # SN-C3_C22_r3688p01,  # scattered light on half, bad sky
     SN-C3_C23_r3688p01,
     SN-C3_C24_r3688p01,
-    SN-C3_C25_r3688p01,
+    # SN-C3_C25_r3688p01,  # bad tape bumps in u
     SN-C3_C26_r3688p01,
-    SN-C3_C27_r3688p01,
-    SN-C3_C28_r3688p01,
+    # SN-C3_C27_r3688p01,  # odd trails in one direction
+    # SN-C3_C28_r3688p01,  # odd trails in one direction, scattered light half
     SN-C3_C29_r3688p01,
     SN-C3_C30_r3688p01,
-    SN-C3_C32_r3688p01,
+    # SN-C3_C32_r3688p01,  # horrible sky subtraction
     SN-C3_C33_r3688p01,
     SN-C3_C34_r3688p01,
-    SN-C3_C35_r3688p01,
+    # SN-C3_C35_r3688p01,  # odd trails in one direction
     SN-C3_C36_r3688p01,
     SN-C3_C37_r3688p01,
     SN-C3_C38_r3688p01,
@@ -44,8 +44,8 @@ tilenames: [
     SN-C3_C42_r3688p01,
     SN-C3_C43_r3688p01,
     SN-C3_C44_r3688p01,
-    SN-C3_C45_r3688p01,
-    SN-C3_C46_r3688p01,
+    # SN-C3_C45_r3688p01,  # bad everything
+    # SN-C3_C46_r3688p01,  # horrible sky sub
     SN-C3_C47_r3688p01,
     SN-C3_C48_r3688p01,
     SN-C3_C49_r3688p01,
