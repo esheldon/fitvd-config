@@ -32,6 +32,20 @@ run-vdsof01
     - ugrizYJHKs sof run
     - need to run on more than 3 tiles
 
+run-cosmos-sof01
+    - fitvd-cosmos-sof01
+    - sof on cosmos with ugrizYJHKs
+
+run-dmask01
+    - first go with bright star mask
+    - much improved
+
+run-dmask02
+    - Additional automated masking of trails etc.
+
+run-dmask03
+    - added trimming of bounds, improved trails etc.
+
 
 Note there might be astrometry issue that could cause some
 of the failures
