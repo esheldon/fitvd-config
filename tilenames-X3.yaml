@@ -2,14 +2,14 @@ des_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.f
 video_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEEP.fits.fz'
 
 tilenames: [
-    SN-X3_C01_r3688p01,
-    SN-X3_C03_r3688p01,
-    SN-X3_C04_r3688p01,
-    SN-X3_C05_r3688p01,
+    # SN-X3_C01_r3688p01,  # bad scattered light
+    # SN-X3_C03_r3688p01,  # scattered light
+    # SN-X3_C04_r3688p01,  # scattered light
+    # SN-X3_C05_r3688p01,  # bad scattered light, (also odd trails on direction)
     SN-X3_C06_r3688p01,
     SN-X3_C07_r3688p01,
     SN-X3_C08_r3688p01,
-    SN-X3_C09_r3688p01,
+    # SN-X3_C09_r3688p01,  # scattered light
     SN-X3_C10_r3688p01,
     SN-X3_C11_r3688p01,
     SN-X3_C12_r3688p01,
@@ -27,29 +27,29 @@ tilenames: [
     SN-X3_C24_r3688p01,
     SN-X3_C25_r3688p01,
     SN-X3_C26_r3688p01,
-    SN-X3_C27_r3688p01,
-    SN-X3_C28_r3688p01,
+    # SN-X3_C27_r3688p01,  # odd trails on direction
+    # SN-X3_C28_r3688p01,  # odd trails on direction
     SN-X3_C29_r3688p01,
-    SN-X3_C30_r3688p01,
+    # SN-X3_C30_r3688p01,  # diffuse emission
     SN-X3_C32_r3688p01,
     SN-X3_C33_r3688p01,
     SN-X3_C34_r3688p01,
-    SN-X3_C35_r3688p01,
+    # SN-X3_C35_r3688p01,  # odd trails on direction
     SN-X3_C36_r3688p01,
-    SN-X3_C37_r3688p01,
-    SN-X3_C38_r3688p01,
+    # SN-X3_C37_r3688p01,  # diffuse emission
+    # SN-X3_C38_r3688p01,  # diffuse emission
     SN-X3_C39_r3688p01,
     SN-X3_C40_r3688p01,
-    SN-X3_C41_r3688p01,
+    # SN-X3_C41_r3688p01,  # light diffuse emission
     SN-X3_C42_r3688p01,
-    SN-X3_C43_r3688p01,
-    SN-X3_C44_r3688p01,
+    # SN-X3_C43_r3688p01,  # light diffuse emission
+    # SN-X3_C44_r3688p01,  # diffuse emission
     SN-X3_C45_r3688p01,
     SN-X3_C46_r3688p01,
     SN-X3_C47_r3688p01,
-    SN-X3_C48_r3688p01,
+    # SN-X3_C48_r3688p01,  # light diffuse emission
     SN-X3_C49_r3688p01,
-    SN-X3_C50_r3688p01,
+    # SN-X3_C50_r3688p01,  # diffuse emission
     SN-X3_C51_r3688p01,
     SN-X3_C52_r3688p01,
     SN-X3_C53_r3688p01,

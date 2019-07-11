@@ -25,7 +25,7 @@ tilenames: [
     COSMOS_C22_r3764p01,
     COSMOS_C23_r3764p01,
     COSMOS_C24_r3764p01,
-    COSMOS_C25_r3764p01,
+    # COSMOS_C25_r3764p01,  # bad tape bumps in u
     COSMOS_C26_r3764p01,
     COSMOS_C27_r3764p01,
     COSMOS_C28_r3764p01,
