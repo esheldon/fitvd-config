@@ -1,0 +1,64 @@
+des_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.fits.fz'
+video_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-VIDEO_DEEP.fits.fz'
+
+tilenames: [
+    SN-C2_C01_r3688p01,
+    # SN-C2_C03_r3688p01,  # airplane or huge streak, scattered light
+    SN-C2_C04_r3688p01,
+    # SN-C2_C05_r3688p01,  # odd trails in one direction
+    SN-C2_C06_r3688p01,
+    # SN-C2_C07_r3688p01,  # scattered light
+    SN-C2_C08_r3688p01,
+    SN-C2_C09_r3688p01,
+    SN-C2_C10_r3688p01,
+    SN-C2_C11_r3688p01,
+    # SN-C2_C12_r3688p01,  # irrecoverable scattered light
+    SN-C2_C13_r3688p01,
+    SN-C2_C14_r3688p01,
+    # SN-C2_C15_r3688p01,  # scattered light
+    SN-C2_C16_r3688p01,
+    SN-C2_C17_r3688p01,
+    SN-C2_C18_r3688p01,
+    SN-C2_C19_r3688p01,
+    SN-C2_C20_r3688p01,
+    # SN-C2_C21_r3688p01,  # scattered light
+    SN-C2_C22_r3688p01,
+    SN-C2_C23_r3688p01,
+    SN-C2_C24_r3688p01,
+    SN-C2_C25_r3688p01,
+    SN-C2_C26_r3688p01,
+    # SN-C2_C27_r3688p01,  # scattered light, odd trails in one direction
+    # SN-C2_C28_r3688p01,  # odd trails in one direction
+    SN-C2_C29_r3688p01,
+    # SN-C2_C30_r3688p01,  # scattered light
+    SN-C2_C32_r3688p01,
+    SN-C2_C33_r3688p01,
+    # SN-C2_C34_r3688p01,  # irrecoverable scattered light
+    # SN-C2_C35_r3688p01,  # odd trails in one direction
+    SN-C2_C36_r3688p01,
+    # SN-C2_C37_r3688p01,  # scattered light
+    SN-C2_C38_r3688p01,
+    SN-C2_C39_r3688p01,
+    SN-C2_C40_r3688p01,
+    SN-C2_C41_r3688p01,
+    SN-C2_C42_r3688p01,
+    SN-C2_C43_r3688p01,
+    # SN-C2_C44_r3688p01,  # vertical trails
+    SN-C2_C45_r3688p01,
+    SN-C2_C46_r3688p01,
+    SN-C2_C47_r3688p01,
+    SN-C2_C48_r3688p01,
+    SN-C2_C49_r3688p01,
+    SN-C2_C50_r3688p01,
+    SN-C2_C51_r3688p01,
+    SN-C2_C52_r3688p01,
+    SN-C2_C53_r3688p01,
+    SN-C2_C54_r3688p01,
+    # SN-C2_C55_r3688p01,  # vertical trails
+    SN-C2_C56_r3688p01,
+    # SN-C2_C57_r3688p01,  # irrecoverable scattered light
+    # SN-C2_C58_r3688p01,  # irrecoverable scattered light
+    SN-C2_C59_r3688p01,
+    SN-C2_C60_r3688p01,
+    SN-C2_C62_r3688p01,
+]
