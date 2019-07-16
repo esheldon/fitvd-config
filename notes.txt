@@ -46,6 +46,146 @@ run-dmask02
 run-dmask03
     - added trimming of bounds, improved trails etc.
 
+run-dmask04g
+    - less generous linking of groups
+    - did not run
+
+run-dmask05g
+    - even less generous linking of groups
+
+			   flagname     val      num  fraction
+	-------------------------------------------
+				no_data       2       46  9.29494e-05
+			psf_failure       8        2  4.04128e-06
+			obj_failure      16      963  0.00194588
+		 too_few_pixels      64      376  0.00075976
+	----------------------------------------------
+				  total     511     1387  0.00280263
+
+		fof_size frac_fail
+		1 0.0006837788996487863
+		2 0.006667768777208354
+		3 0.028544243577545196
+		4 0.07988165680473373
+		5 0.13432835820895522
+		6 0.3333333333333333
+		7 0.8
+		8 1.0
+		9 0.0
+
+run-dmask06cen
+    - looser cen prior, didn't help
+
+run-dessof02
+    - ugriz SOF run
+			   flagname     val      num  fraction
+	----------------------------------------------
+				no_data       2       33  6.66811e-05
+			psf_failure       8        1  2.02064e-06
+			obj_failure      16      398  0.000804214
+		 too_few_pixels      64      271  0.000547593
+	----------------------------------------------
+				  total     511      703  0.00142051
+
+run-dmask07guess
+    - guess from dessof02
+    - same fof pars as 05g
+	  on C3_C09 it is worse than 05g
+			   flagname     val      num  fraction
+	----------------------------------------------
+			obj_failure      16      163  0.0147605
+		 too_few_pixels      64        5  0.000452776
+	----------------------------------------------
+				  total     511      168  0.0152133
+
+	but these are mainly failures for fof size 1, which
+	means the guessing isn't going so well maybe
+
+	fof_size frac_fail
+	1 0.014968566011376111
+	2 0.007211538461538462
+	3 0.022727272727272728
+	4 0.08333333333333333
+	5 0.0
+
+	compare to that particular one on 05g; it aint helping
+
+	fof_size frac_fail
+	1 0.0007983235206067259
+	2 0.014423076923076924
+	3 0.045454545454545456
+	4 0.08333333333333333
+	5 0.0
+
+
+    doing simpler guesses for cen, shape, and fracdev seems to
+    help
+
+               flagname     val      num  fraction
+    ----------------------------------------------
+            obj_failure      16       43  0.00389387
+         too_few_pixels      64        5  0.000452776
+    ----------------------------------------------
+                  total     511       48  0.00434664
+
+    fof_size frac_fail
+    1 0.0031932940824269036
+    2 0.009615384615384616
+    3 0.022727272727272728
+    4 0.0
+    5 0.0
+
+    full
+
+               flagname     val      num  fraction
+    ----------------------------------------------
+                no_data       2       46  9.29494e-05
+            psf_failure       8        1  2.02064e-06
+            obj_failure      16      664  0.0013417
+         too_few_pixels      64      376  0.00075976
+    ----------------------------------------------
+                  total     511     1087  0.00219643
+
+
+    fof_size frac_fail
+    1 0.0005194943588240779
+    2 0.005235025073014823
+    3 0.017602283539486202
+    4 0.04142011834319527
+    5 0.11940298507462686
+    6 0.16666666666666666
+    7 0.2
+    8 0.5
+    9 0.0
+
+run-dmask09low
+    - guess from SOF
+    - raise tolerances for the groups and those not fit in SOF
+			   flagname     val      num  fraction
+	----------------------------------------------
+			 no_attempt       1        0  0
+				no_data       2       46  9.29494e-05
+			image_flags       4        0  0
+			psf_failure       8        1  2.02064e-06
+			obj_failure      16       59  0.000119218
+		  high_maskfrac      32        0  0
+		 too_few_pixels      64      376  0.00075976
+	 all_centers_masked     128        0  0
+		  fof_too_large     256        0  0
+	----------------------------------------------
+				  total     511      482  0.000973948
+
+	fof_size frac_fail
+	1 1.7760490899968474e-05
+	2 0.0011572160687716977
+	3 0.0014272121788772598
+	4 0.0
+	5 0.0
+	6 0.0
+	7 0.0
+	8 0.0
+	9 0.0
+
 
 Note there might be astrometry issue that could cause some
 of the failures
