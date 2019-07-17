@@ -159,7 +159,7 @@ run-dmask07guess
     9 0.0
 
 run-dmask09low
-    - guess from SOF
+    - guess from SOF dessof02
     - raise tolerances for the groups and those not fit in SOF
 			   flagname     val      num  fraction
 	----------------------------------------------
