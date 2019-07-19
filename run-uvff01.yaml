@@ -1,0 +1,21 @@
+seed: 14291
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-uvff01.yaml'
+model_pars_run: 'run-dmask09low'
+
+# make bigger when doing more tiles
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+# need a des band for FoF finding
+des_bands: [r]
+uvista_bands: [J, H, Ks]
+
+# meds file to use for FoF finding
+fof_band: 0
+
+# for condor
+jobs_per_sub: 100
