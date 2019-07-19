@@ -187,6 +187,19 @@ run-dmask09low
 	9 0.0
 
 
+run-uvd01
+    - ugrizJHKs run with full MOF, no guesses from SOF (probably should
+    do that though)
+run-uvd02
+    - rerunning with mask info
+
+run-uvff01
+    - using results from dmask09low for ff; due to how the code
+    works, need to do ff on a des band also to get sizes for
+    the FoF finding. Used r
+
+    getting lots of failures with singular
+
 Note there might be astrometry issue that could cause some
 of the failures
 
