@@ -1,5 +1,10 @@
 SN etc. fields
 ------------
+run-vd13
+    - video + des
+    - MOF run, no guesses from SOF
+    - incorporating new object masks
+
 run-vd09
     - fitvd-deep08
     - ugrizY JHKs
@@ -86,6 +91,10 @@ run-dessof02
 		 too_few_pixels      64      271  0.000547593
 	----------------------------------------------
 				  total     511      703  0.00142051
+
+run-dessof03
+    - same as dessof02 but adding mask flags and fof size
+
 
 run-dmask07guess
     - guess from dessof02
