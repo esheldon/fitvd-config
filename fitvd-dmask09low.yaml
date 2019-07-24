@@ -122,7 +122,7 @@ mof:
             maxiter: 2000
             tol: 1.0e-4
 
-	# higher tolerance for groups and SOF failures
+    # higher tolerance for groups and SOF failures
     lm_pars:
         maxfev: 4000
         ftol: 1.0e-3
