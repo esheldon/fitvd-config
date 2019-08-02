@@ -1,9 +1,28 @@
 SN etc. fields
 ------------
+
+run-dessof03
+    - SN same as dessof02 but adding mask flags and fof size
+
+run-desmof01
+    - SN des only ugriz mof run using dessof03 as guesses
+
 run-vd13
     - video + des
     - MOF run, no guesses from SOF
     - incorporating new object masks
+
+run-dmask09low
+    - cosmos des only ugriz
+
+run-uvd02
+    - COSMOS joint des and uvista ugrizJHK
+    - with mask info
+
+run-dessof-psc01
+    - cosmos r band only postage stamp coadds run
+
+
 
 run-vd09
     - fitvd-deep08
@@ -91,9 +110,6 @@ run-dessof02
 		 too_few_pixels      64      271  0.000547593
 	----------------------------------------------
 				  total     511      703  0.00142051
-
-run-dessof03
-    - same as dessof02 but adding mask flags and fof size
 
 
 run-dmask07guess
