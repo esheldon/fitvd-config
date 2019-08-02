@@ -7,7 +7,8 @@ skip_first_epoch:  False
 
 # can't use uberseg since not available for video bands
 # weight_type: 'uberseg'
-weight_type: 'circular-mask'
+# weight_type: 'circular-mask'
+weight_type: 'weight'
 
 trim_images:
     min_size: 32
@@ -88,12 +89,6 @@ mof:
         ntry: 4
 
         model: 'em3'
-
         em_pars:
             maxiter: 2000
             tol: 1.0e-4
-
-    lm_pars:
-        maxfev: 4000
-        ftol: 1.0e-3
-        xtol: 1.0e-3
