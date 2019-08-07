@@ -1,6 +1,9 @@
 SN etc. fields
 ------------
 
+run-dessof-gs03
+    - running on cosmos coadd with galsim fitter to use full psf model
+
 run-dessof03
     - SN same as dessof02 but adding mask flags and fof size
 
