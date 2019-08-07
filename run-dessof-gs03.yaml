@@ -1,0 +1,21 @@
+# galsim fitter on postage stamp coadds
+seed: 14291
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-dessof-gs03.yaml'
+
+# nominal chunksize
+chunksize: 100
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+# des_bands: [u, g, r, i, z]
+des_bands: [r]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 0
+
+# for condor
+jobs_per_sub: 100

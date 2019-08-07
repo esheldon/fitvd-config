@@ -1,0 +1,95 @@
+# meant to be run on the postage stamp coadds, so
+# bad pixels have been filled in
+parspace: 'galsim'
+use_kspace: False
+
+hst_band: null
+
+# usually this is to skip the coadd
+skip_first_epoch:  False
+
+# gotta use all the data in k space
+weight_type: 'uberseg'
+# weight_type: 'weight'
+
+trim_images:
+    min_size: 32
+    max_size: 64
+
+# ensure a box with specified radius is unmasked
+#cut_masked_center:
+#    radius_pixels: 3.0
+
+reject_outliers: False
+
+# in the coadds only bit 0 is set, which basically means don't
+# use the pixel.  Since we work by name we need to put BPM here
+# for that
+
+# image_flagnames_to_mask: [
+#     BPM,
+# ]
+# use all data for k space
+image_flagnames_to_mask: []
+
+# this is before adding additional masking, e.g. circular mask
+# does not apply for uberseg
+max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.  this is only
+# checked if using uberseg, or in _set_weight, if the weight map is being
+# modified, e.g. circular mask
+min_npix: 9
+
+use_mask: True
+
+radius_column: "iso_radius"
+
+mof:
+
+    model: 'bdf'
+
+    # number of times to try the fit if it fails
+    ntry: 4
+
+    # for guesses
+    detband: 0
+   
+    priors:
+        cen:
+            type: 'normal2d'
+            # seem to need wider prior for galsim fitter?
+            # sigma: 0.001
+            sigma: 0.263
+
+        g:
+            type: 'ba'
+            sigma: 0.2
+
+        hlr:
+            type: 'flat'
+            pars: [1.0e-6, 1.e+09]
+
+        flux:
+            type: 'flat'
+            pars: [-1000.0, 1.0e+09]
+
+        fracdev:
+            type: 'normal'
+            mean: 0.5
+            sigma: 0.1
+            bounds: [0.0, 1.0]
+
+    lm_pars:
+        maxfev: 4000
+        ftol: 1.0e-3
+        xtol: 1.0e-3
+
+    psf:
+        ntry: 4
+
+        model: 'em3'
+
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
