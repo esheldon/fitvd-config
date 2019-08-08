@@ -14,7 +14,7 @@ weight_type: 'uberseg'
 
 trim_images:
     min_size: 32
-    max_size: 64
+    max_size: 32
 
 # ensure a box with specified radius is unmasked
 #cut_masked_center:
@@ -59,8 +59,8 @@ mof:
         cen:
             type: 'normal2d'
             # seem to need wider prior for galsim fitter?
-            # sigma: 0.001
-            sigma: 0.263
+            sigma: 0.001
+            # sigma: 0.263
 
         g:
             type: 'ba'
