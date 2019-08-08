@@ -27,14 +27,14 @@ tilenames: [
     SN-X3_C24_r3688p01,
     SN-X3_C25_r3688p01,
     SN-X3_C26_r3688p01,
-    # SN-X3_C27_r3688p01,  # odd trails on direction
-    # SN-X3_C28_r3688p01,  # odd trails on direction
+    SN-X3_C27_r3688p01,  # odd trails on direction
+    SN-X3_C28_r3688p01,  # odd trails on direction
     SN-X3_C29_r3688p01,
     # SN-X3_C30_r3688p01,  # diffuse emission
     SN-X3_C32_r3688p01,
     SN-X3_C33_r3688p01,
     SN-X3_C34_r3688p01,
-    # SN-X3_C35_r3688p01,  # odd trails on direction
+    SN-X3_C35_r3688p01,  # odd trails on direction
     SN-X3_C36_r3688p01,
     # SN-X3_C37_r3688p01,  # diffuse emission
     # SN-X3_C38_r3688p01,  # diffuse emission

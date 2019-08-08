@@ -27,8 +27,8 @@ tilenames: [
     SN-E2_C24_r3688p02,
     # SN-E2_C25_r3688p02,  # bad tape bumps u
     SN-E2_C26_r3688p02,
-    # SN-E2_C27_r3688p02,  # odd trails one direction
-    # SN-E2_C28_r3688p02,  # odd trails one direction
+    SN-E2_C27_r3688p02,  # odd trails one direction
+    SN-E2_C28_r3688p02,  # odd trails one direction
     SN-E2_C29_r3688p02,
     SN-E2_C30_r3688p02,
     SN-E2_C32_r3688p02,
