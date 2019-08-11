@@ -7,7 +7,7 @@ run-cosmos-griz-mof01
      guesses from fullmeds02
      - ngmix v1.3.4
      - mof v0.9.2
-     - fitvd v0.9.5
+     - fitvd v0.9.5.1
 
 run-dessof-gs03
     - running on original cosmos coadd with galsim fitter to use full psf model
