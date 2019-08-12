@@ -3,8 +3,15 @@ SN etc. fields
 
 run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
+
+run-sn-griz-mof01
 run-cosmos-griz-mof01
-     guesses from fullmeds02
+     The fitvd*yaml files are the same for these
+     runs differ by chunksize, smaller for cosmos due to running
+     on full MEDS files
+
+     no guesses from SOF
+
      - ngmix v1.3.4
      - mof v0.9.2
      - fitvd v0.9.5.1
