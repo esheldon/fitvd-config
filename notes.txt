@@ -5,7 +5,8 @@ run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
 
 run-sn-griz-mof01
-run-cosmos-griz-mof01
+* run-cosmos-griz-mof01 (forgot to exclude the coadd)
+run-cosmos-griz-mof02
      The fitvd*yaml files are the same for these
      runs differ by chunksize, smaller for cosmos due to running
      on full MEDS files
