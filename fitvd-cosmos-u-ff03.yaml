@@ -7,13 +7,18 @@ hst_band: null
 skip_first_epoch: True
 
 # can't use uberseg since not available for video bands
-# weight_type: 'uberseg'
+weight_type: 'uberseg'
 # weight_type: 'circular-mask'
-weight_type: 'weight'
+# weight_type: 'weight'
 
 trim_images:
     min_size: 32
     max_size: 64
+
+# gaussian aperture weighted fluxes
+gap:
+    # in arcsec
+    weight_fwhm: 2.5
 
 # ensure a box with specified radius is unmasked
 #cut_masked_center:
@@ -27,6 +32,16 @@ reject_outliers: True
 
 image_flagnames_to_mask: [
     BPM,
+    SATURATE,
+    INTERP,
+    BADAMP,
+    CRAY,
+    TRAIL,
+    EDGEBLEED,
+    EDGE,
+    STREAK,
+    NEAREDGE,
+    TAPEBUMP,
 ]
 
 

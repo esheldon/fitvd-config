@@ -1,7 +1,7 @@
 seed: 14291
 
-fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-u-mof01.yaml'
-model_pars_run: 'run-dmask09low'
+fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-u-ff03.yaml'
+model_pars_run: 'run-cosmos-griz-mof03'
 
 # make bigger when doing more tiles
 chunksize: 1000
@@ -11,8 +11,8 @@ chunksize: 1000
 threshold: 4
 
 # need a des band for FoF finding
-des_bands: []
-uvista_bands: [J, H, Ks]
+des_bands: [u]
+uvista_bands: []
 
 # meds file to use for FoF finding
 fof_band: 0
