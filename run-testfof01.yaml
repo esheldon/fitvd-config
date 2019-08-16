@@ -1,0 +1,20 @@
+seed: 9213
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-testfof01.yaml'
+# model_pars_run: '....'
+
+# make bigger when doing more tiles
+chunksize: 200
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+des_bands: [g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
