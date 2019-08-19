@@ -1,0 +1,20 @@
+seed: 9213
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-sn-ugriz-mof01.yaml'
+# model_pars_run: 'run-dessof-fullmeds02'
+
+# make bigger when doing more tiles
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 4
+
+des_bands: [g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
