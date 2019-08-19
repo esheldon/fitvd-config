@@ -5,6 +5,15 @@ run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
 
 run-sn-griz-mof01
+run-sn-griz-mof02
+    - using tolerances I figured out for multi-epoch cosmos
+    fits.  maybe overkill for coadd work but should be consistent
+run-sn-griz-mof03
+    - tight cen prior, guess from gauss
+
+run-sn-ugriz-mof01
+    - will compare with u FF
+
 * run-cosmos-griz-mof01 (forgot to exclude the coadd)
 run-cosmos-griz-mof02
      The fitvd*yaml files are the same for these
