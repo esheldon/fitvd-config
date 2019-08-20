@@ -10,6 +10,12 @@ run-sn-griz-mof02
     fits.  maybe overkill for coadd work but should be consistent
 run-sn-griz-mof03
     - tight cen prior, guess from gauss
+run-sn-griz-mof04
+    - positive flux, tight cen prior, guess from gauss
+    - don't do this!
+run-sn-griz-mof05
+    - reverted to master, not using guess from gauss, using
+      tight cen prior, looser 1.0e-5 for both
 
 run-sn-ugriz-mof01
     - will compare with u FF
