@@ -5,6 +5,7 @@ run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
 
 run-sn-griz-mof01
+    - note this got over-written, need to revert it
 run-sn-griz-mof02
     - using tolerances I figured out for multi-epoch cosmos
     fits.  maybe overkill for coadd work but should be consistent
@@ -13,14 +14,21 @@ run-sn-griz-mof03
 run-sn-griz-mof04
     - positive flux, tight cen prior, guess from gauss
     - don't do this!
-run-sn-griz-mof05
+
+* run-sn-griz-mof05
     - reverted to master, not using guess from gauss, using
       tight cen prior, looser 1.0e-5 for both
+    - running this one for more tiles
 
-run-sn-ugriz-mof01
+* run-sn-ugriz-mof01
     - will compare with u FF
+    - X3 compares well with run-sn-griz-mof05
+    - C3 a little worse but probably acceptable
+* run-sn-JHK-ff01
+    - using run-sn-ugriz-mof01 for models and fofs
 
-* run-cosmos-griz-mof01 (forgot to exclude the coadd)
+
+run-cosmos-griz-mof01 (forgot to exclude the coadd)
 run-cosmos-griz-mof02
      The fitvd*yaml files are the same for these
      runs differ by chunksize, smaller for cosmos due to running
@@ -31,6 +39,16 @@ run-cosmos-griz-mof02
      - ngmix v1.3.4
      - mof v0.9.2
      - fitvd v0.9.5.1
+
+
+run-cosmos-ugriz-mof01
+    - new meds files from DESDM
+    - new masks
+    - tight tolerances on fitter
+
+
+
+
 
 run-dessof-gs03
     - running on original cosmos coadd with galsim fitter to use full psf model
