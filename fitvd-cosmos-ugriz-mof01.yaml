@@ -4,10 +4,9 @@ parspace: 'ngmix'
 hst_band: null
 
 # usually this is to skip the coadd
-skip_first_epoch:  False
+skip_first_epoch:  True
 
 weight_type: 'uberseg'
-# weight_type: 'circular-mask'
 
 trim_images:
     min_size: 32
@@ -30,7 +29,19 @@ reject_outliers: True
 #
 # for the SN these are coadds which only BPM is set
 
-image_flagnames_to_mask: [BPM]
+image_flagnames_to_mask: [
+    BPM,
+    SATURATE,
+    INTERP,
+    BADAMP,
+    CRAY,
+    TRAIL,
+    EDGEBLEED,
+    EDGE,
+    STREAK,
+    NEAREDGE,
+    TAPEBUMP,
+]
 
 # this is before adding additional masking, e.g. circular mask
 # does not apply for uberseg
@@ -42,11 +53,6 @@ max_maskfrac: 0.45
 min_npix: 9
 
 use_mask: True
-
-# old way
-#mask:
-#    # multiply the radius in the mask by this factor
-#    rad_mult: 1.5
 
 radius_column: "iso_radius"
 
@@ -81,7 +87,6 @@ fofs:
     #extra_psf_fwhm_arcsec: 1.0
     extra_psf_fwhm_arcsec: 0.0
 
-
 mof:
 
     model: 'bdf'
@@ -91,7 +96,7 @@ mof:
     ntry: 2
 
     # for guesses
-    detband: 3
+    detband: 0
    
     priors:
         cen:
@@ -126,5 +131,5 @@ mof:
             tol: 1.0e-4
 
     lm_pars:
-        ftol: 1.0e-5
+        ftol: 1.0e-7
         xtol: 1.0e-5

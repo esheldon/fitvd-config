@@ -1,10 +1,11 @@
 seed: 9213
 
-fit_config: '$FITVD_CONFIG_DIR/fitvd-sn-griz-mof01.yaml'
+fit_config: '$FITVD_CONFIG_DIR/fitvd-sn-griz-mof05.yaml'
 # model_pars_run: 'run-dessof-fullmeds02'
 
 # make bigger when doing more tiles
 chunksize: 1000
+# chunksize: 100
 
 # groups larger than this threshold get put into their
 # own chunk

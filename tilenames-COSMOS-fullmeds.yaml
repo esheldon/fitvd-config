@@ -1,4 +1,4 @@
-des_pattern: '$MEDS_DIR/y3deep01/%(tilename)s/%(tilename)s_%(band)s_meds-y3deep01.fits.fz'
+des_pattern: '$MEDS_DIR/y6a1/%(tilename)s/%(tilename)s_%(band)s_meds-Y6A1_MEDS.fits.fz'
 uvista_pattern: ''
 
 tilenames: [

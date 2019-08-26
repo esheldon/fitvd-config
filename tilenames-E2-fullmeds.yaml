@@ -1,0 +1,64 @@
+des_pattern: '$MEDS_DIR/y6a1/%(tilename)s/%(tilename)s_%(band)s_meds-Y6A1_MEDS.fits.fz'
+video_pattern: ''
+
+tilenames: [
+    SN-E2_C01,
+    # SN-E2_C03,  # scattered light
+    SN-E2_C04,
+    # SN-E2_C05,  # scattered light, odd trails one direction
+    # SN-E2_C06,  # irrecoverable scattered light
+    SN-E2_C07,
+    SN-E2_C08,
+    # SN-E2_C09,  # scattered light
+    # SN-E2_C10,  # scattered light
+    SN-E2_C11,
+    SN-E2_C12,
+    SN-E2_C13,
+    SN-E2_C14,
+    SN-E2_C15,
+    # SN-E2_C16,  # vertical trails
+    SN-E2_C17,
+    SN-E2_C18,
+    SN-E2_C19,
+    SN-E2_C20,
+    SN-E2_C21,
+    SN-E2_C22,
+    SN-E2_C23,
+    SN-E2_C24,
+    # SN-E2_C25,  # bad tape bumps u
+    SN-E2_C26,
+    SN-E2_C27,  # odd trails one direction
+    SN-E2_C28,  # odd trails one direction
+    SN-E2_C29,
+    SN-E2_C30,
+    SN-E2_C32,
+    SN-E2_C33,
+    SN-E2_C34,
+    # SN-E2_C35,  # scattered light, odd trails one direction
+    SN-E2_C36,
+    SN-E2_C37,
+    # SN-E2_C38,  # scattered light
+    SN-E2_C39,
+    SN-E2_C40,
+    SN-E2_C41,
+    SN-E2_C42,
+    SN-E2_C43,
+    SN-E2_C44,
+    SN-E2_C45,
+    SN-E2_C46,
+    # SN-E2_C47,  # scattered light, unmasked streak
+    SN-E2_C48,
+    SN-E2_C49,
+    SN-E2_C50,
+    SN-E2_C51,
+    SN-E2_C52,
+    # SN-E2_C53,  # unmasked streak
+    # SN-E2_C54,  # irrecoverable scattered light
+    SN-E2_C55,
+    SN-E2_C56,
+    SN-E2_C57,
+    # SN-E2_C58,  # scattered light
+    # SN-E2_C59,  # irrecoverable scattered light
+    SN-E2_C60,
+    # SN-E2_C62,  # irrecoverable scattered light
+]

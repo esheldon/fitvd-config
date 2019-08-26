@@ -1,19 +1,19 @@
-# same config should work for cosmos and SN
-parspace: 'ngmix'
+parspace: 'ngmix-flux'
 
 hst_band: null
 
 # usually this is to skip the coadd
 skip_first_epoch:  False
 
-weight_type: 'uberseg'
+# can't use uberseg since not available for video bands
+# weight_type: 'uberseg'
 # weight_type: 'circular-mask'
+weight_type: 'weight'
 
 trim_images:
     min_size: 32
     max_size: 64
 
-# gaussian aperture weighted fluxes
 gap:
     # in arcsec
     weight_fwhm: 2.5
@@ -24,13 +24,14 @@ gap:
 
 reject_outliers: True
 
-# for cosmos these are full meds.  Basically we expect the outlier
-# rejection to get everything except saturated stars and such,
-# which we will mask. So we don't do anything here.
-#
-# for the SN these are coadds which only BPM is set
+# in the coadds only bit 0 is set, which basically means don't
+# use the pixel.  Since we work by name we need to put BPM here
+# for that
 
-image_flagnames_to_mask: [BPM]
+image_flagnames_to_mask: [
+    BPM,
+]
+
 
 # this is before adding additional masking, e.g. circular mask
 # does not apply for uberseg
@@ -43,14 +44,9 @@ min_npix: 9
 
 use_mask: True
 
-# old way
-#mask:
-#    # multiply the radius in the mask by this factor
-#    rad_mult: 1.5
-
 radius_column: "iso_radius"
 
-max_fof_size: 25
+max_fof_size: 1000
 
 fofs:
     method: 'radius'
@@ -85,46 +81,11 @@ fofs:
 mof:
 
     model: 'bdf'
-    # use_input_guesses: True
-
-    # number of times to try the fit if it fails
-    ntry: 2
-
-    # for guesses
-    detband: 3
-   
-    priors:
-        cen:
-            type: 'normal2d'
-            sigma: 0.001
-
-        g:
-            type: 'ba'
-            sigma: 0.2
-
-        T:
-            type: 'flat'
-            pars: [-1.0, 1.e+05]
-
-        flux:
-            type: 'flat'
-            pars: [-1000.0, 1.0e+09]
-
-        fracdev:
-            type: 'normal'
-            mean: 0.5
-            sigma: 0.1
-            bounds: [0.0, 1.0]
 
     psf:
         ntry: 4
 
         model: 'em3'
-
         em_pars:
             maxiter: 2000
             tol: 1.0e-4
-
-    lm_pars:
-        ftol: 1.0e-5
-        xtol: 1.0e-5
