@@ -8,18 +8,28 @@ legend
 Current favored runs
 ============
 
-* run-cosmos-ugriz-mof05
+- run-cosmos-ugriz-mof05
     - new masks
     - use maxfev calculation in MOF, tolerances at 1.e-5
     - fitvd v0.9.9
     - mof v0.9.4
+    - failure rate vs group size looks great
+
 * run-C3X3-ugriz-mof01
     - new masks
     - use maxfev calculation in MOF, tolerances at 1.e-5
     - fitvd v0.9.9
     - mof v0.9.4
-    - C3 running
-    - X3 to start
+    - C3 done
+    - X3 running
+    - failure rate vs group size doesn't look so great
+
+* run-E2-ugriz-mof01
+    - new masks
+    - use maxfev calculation in MOF, tolerances at 1.e-5
+    - fitvd v0.9.9
+    - mof v0.9.4
+
 
 all runs
 =========
