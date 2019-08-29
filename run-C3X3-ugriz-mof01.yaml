@@ -1,13 +1,15 @@
-seed: 31691
+seed: 921
 
-fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-ugriz-mof01.yaml'
-# model_pars_run: '....'
+fit_config: '$FITVD_CONFIG_DIR/fitvd-C3X3-ugriz-mof01.yaml'
+# model_pars_run: 'run-dessof-fullmeds02'
 
-chunksize: 50
+# make bigger when doing more tiles
+chunksize: 1000
+# chunksize: 100
 
 # groups larger than this threshold get put into their
 # own chunk
-threshold: 2
+threshold: 4
 
 des_bands: [u, g, r, i, z]
 video_bands: []

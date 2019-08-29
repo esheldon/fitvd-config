@@ -1,6 +1,6 @@
 seed: 31691
 
-fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-ugriz-mof01.yaml'
+fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-ugriz-mof02.yaml'
 # model_pars_run: '....'
 
 chunksize: 50
