@@ -7,15 +7,13 @@ legend
 
 Current favored runs
 ============
-
-- run-cosmos-ugriz-mof05
+* run-cosmos-ugriz-mof06
     - new masks
-    - use maxfev calculation in MOF, tolerances at 1.e-5
     - fitvd v0.9.9
     - mof v0.9.4
-    - failure rate vs group size looks great
+    - ftol 1.0e-7 to see if we can get out of the rut
 
-* run-C3X3-ugriz-mof01
+- run-C3X3-ugriz-mof01
     - new masks
     - use maxfev calculation in MOF, tolerances at 1.e-5
     - fitvd v0.9.9
@@ -33,6 +31,16 @@ Current favored runs
 
 all runs
 =========
+
+- run-cosmos-ugriz-mof05
+    - new masks
+    - use maxfev calculation in MOF, tolerances at 1.e-5
+    - fitvd v0.9.9
+    - mof v0.9.4
+    - failure rate vs group size looks great
+    - looks like fitter gets stuck with bad guesses, e.g.
+      seeing the locus at T=0.025 which is the fallback guess
+
 
 run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
