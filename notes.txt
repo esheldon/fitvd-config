@@ -1,6 +1,29 @@
 SN etc. fields
 ------------
 
+legend
+* means still running
+- means finished
+
+Current favored runs
+============
+
+* run-cosmos-ugriz-mof05
+    - new masks
+    - use maxfev calculation in MOF, tolerances at 1.e-5
+    - fitvd v0.9.9
+    - mof v0.9.4
+* run-C3X3-ugriz-mof01
+    - new masks
+    - use maxfev calculation in MOF, tolerances at 1.e-5
+    - fitvd v0.9.9
+    - mof v0.9.4
+    - C3 running
+    - X3 to start
+
+all runs
+=========
+
 run-dessof-fullmeds02
     - griz cosmos run with full meds from medsconf y3deep
 
@@ -45,8 +68,29 @@ run-cosmos-ugriz-mof01
     - new meds files from DESDM
     - new masks
     - tight tolerances on fitter
+    - size-mag diagram looks bad for C32
+    - try C46
+
+run-cosmos-ugriz-mof02
+    - use guess of size based on psf
+    - looks same
+run-cosmos-ugriz-mof03
+    - using my meds files
+    - still crap, maybe it is u?
 
 
+run-cosmos-griz-mof04
+    - after ugriz fails on both mine and desdm meds files
+      for cosmos, trying griz with new meds files
+    - looks like shit, maybe it is the tile? 32?  same for 46
+
+
+run-cosmos-ugriz-mof04
+    - use convergence pars from mof03 which looks fine
+    - this one looks ok....
+run-cosmos-ugriz-mof05
+    - use calculated maxfev, gives ~4000 same as mof03 for 1 obj
+      but scales.  3 times higher than default lm
 
 
 
