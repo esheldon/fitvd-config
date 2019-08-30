@@ -56,6 +56,9 @@ GS based
 * run-cosmos-i-loghlr04
     - wider normals on log flux and log hlr
 
+* run-cosmos-ugriz-gsmof04
+    - wide normals on log flux and log hlr
+
 
 
 all runs
