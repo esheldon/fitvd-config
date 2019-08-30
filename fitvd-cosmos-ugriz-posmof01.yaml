@@ -109,7 +109,7 @@ mof:
 
         T:
             type: 'flat'
-            pars: [-1.0, 1.e+05]
+            pars: [0.001, 1.e+05]
 
         flux:
             type: 'flat'

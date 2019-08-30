@@ -1,0 +1,19 @@
+seed: 23
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-ugriz-posmof01.yaml'
+# model_pars_run: '....'
+
+chunksize: 50
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 2
+
+des_bands: [u, g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100

@@ -1,10 +1,9 @@
-# same config should work for cosmos and SN
-parspace: 'ngmix'
+parspace: 'galsim'
+use_kspace: False
 
 hst_band: null
 
-# usually this is to skip the coadd
-skip_first_epoch:  True
+skip_first_epoch:  False
 
 weight_type: 'uberseg'
 
@@ -13,15 +12,11 @@ trim_images:
     max_size: 64
 
 # gaussian aperture weighted fluxes
-gap:
-    # in arcsec
-    weight_fwhm: 2.5
+# gap:
+#     # in arcsec
+#     weight_fwhm: 2.5
 
-# ensure a box with specified radius is unmasked
-#cut_masked_center:
-#    radius_pixels: 3.0
-
-reject_outliers: True
+reject_outliers: False
 
 # for cosmos these are full meds.  Basically we expect the outlier
 # rejection to get everything except saturated stars and such,
@@ -31,16 +26,6 @@ reject_outliers: True
 
 image_flagnames_to_mask: [
     BPM,
-    SATURATE,
-    INTERP,
-    BADAMP,
-    CRAY,
-    TRAIL,
-    EDGEBLEED,
-    EDGE,
-    STREAK,
-    NEAREDGE,
-    TAPEBUMP,
 ]
 
 # this is before adding additional masking, e.g. circular mask
@@ -96,7 +81,7 @@ mof:
     ntry: 2
 
     # for guesses
-    detband: 2
+    detband: 0
    
     priors:
         cen:
@@ -107,9 +92,11 @@ mof:
             type: 'ba'
             sigma: 0.2
 
-        T:
-            type: 'flat'
-            pars: [-1.0, 1.e+05]
+        # this is really on log10(hlr)
+        hlr:
+            type: 'normal'
+            mean: -0.770
+            sigma: 0.311
 
         flux:
             type: 'flat'
