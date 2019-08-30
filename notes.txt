@@ -29,6 +29,35 @@ Current favored runs
     - mof v0.9.4
 
 
+GS based
+* run-cosmos-ugriz-gsmof01
+    - using n=2
+    - was offsetting psf
+    - conc looks off
+
+* run-cosmos-ugriz-gsmof02
+    - using n=2
+    - not offsetting psf
+        - worse
+    - maybe need to set offset of psf image and then
+    offset it when drawing too
+
+* run-cosmos-i-gsmof01
+    - similar
+
+* run-cosmos-i-loghlr01
+    - gs fitter with log10(hlr) as parameter, with normal prior
+    - similar
+* run-cosmos-i-loghlr02
+    - flat prior on log hlr
+* run-cosmos-i-loghlr03
+    - tried joint prior but fitter is getting stuck
+    in local minima
+* run-cosmos-i-loghlr04
+    - wider normals on log flux and log hlr
+
+
+
 all runs
 =========
 
