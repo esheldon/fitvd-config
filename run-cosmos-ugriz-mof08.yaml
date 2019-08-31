@@ -3,7 +3,7 @@ seed: 23
 fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-ugriz-mof08.yaml'
 # model_pars_run: '....'
 
-chunksize: 100
+chunksize: 200
 
 # groups larger than this threshold get put into their
 # own chunk
