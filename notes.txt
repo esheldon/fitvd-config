@@ -7,6 +7,13 @@ legend
 
 Current favored runs
 ============
+* run-cosmos-ugriz-mof08
+    - em5
+
+* run-cosmos-ugriz-mof07
+    - run on coadds with new convergence
+    - will check with simulation
+
 * run-cosmos-ugriz-mof06
     - new masks
     - fitvd v0.9.9
@@ -60,6 +67,15 @@ GS based
     - wide normals on log flux and log hlr
 
 
+injection runs
+==============
+
+- run-inject-stars03
+    - em5 looks great
+- run-inject-gals01
+    - em5
+- run-inject-stars-gs01
+    - injection for linear pars
 
 all runs
 =========
