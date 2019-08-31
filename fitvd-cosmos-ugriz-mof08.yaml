@@ -1,10 +1,5 @@
-# uberseg
+# same config should work for cosmos and SN
 parspace: 'ngmix'
-
-inject:
-    type: cosmos
-    stars: /astro/u/esheldon/cosmos/prior/cosmos-stars.fits
-    # galaxies: /astro/u/esheldon/cosmos/prior/cosmos-gals.fits
 
 hst_band: null
 
@@ -54,6 +49,35 @@ radius_column: "iso_radius"
 
 max_fof_size: 25
 
+fofs:
+    method: 'radius'
+    check_seg: false
+
+    # name in meds file, or catalog if method is catalog_radius
+    #radius_column: "iso_radius_arcsec"
+    radius_column: "iso_radius"
+
+    # factor to multiply radius this happens before clipping to [min_radius,
+    # max_radius] for a low threshold, the isoarea is basically covering all
+    # the observed flux, so mult of 1 makes sense
+    radius_mult: 1.0
+
+    # clip the radius in pixels=sqrt(isoarea_image/pi)
+    # 5 pixels is about 3 sigma for a 1'' FWHM gaussian
+    # this happens after the radius_mult is applied
+    min_radius_arcsec: 0.1
+
+    #max_radius_arcsec: null
+    max_radius_arcsec: 2.0
+
+    # This is added to the radius. This kind of padding makes sense for radii
+    # based on the iso area.  Padding happens after mult and clipping
+    padding_arcsec: 0.0
+
+    # arcsec
+    #extra_psf_fwhm_arcsec: 1.0
+    extra_psf_fwhm_arcsec: 0.0
+
 mof:
 
     model: 'bdf'
@@ -91,7 +115,7 @@ mof:
     psf:
         ntry: 4
 
-        model: 'em3'
+        model: 'em5'
 
         em_pars:
             maxiter: 2000

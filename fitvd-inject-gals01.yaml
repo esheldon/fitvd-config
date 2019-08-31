@@ -3,8 +3,8 @@ parspace: 'ngmix'
 
 inject:
     type: cosmos
-    stars: /astro/u/esheldon/cosmos/prior/cosmos-stars.fits
-    # galaxies: /astro/u/esheldon/cosmos/prior/cosmos-gals.fits
+    # stars: /astro/u/esheldon/cosmos/prior/cosmos-stars.fits
+    galaxies: /astro/u/esheldon/cosmos/prior/cosmos-gals.fits
 
 hst_band: null
 
@@ -91,7 +91,7 @@ mof:
     psf:
         ntry: 4
 
-        model: 'em3'
+        model: 'em5'
 
         em_pars:
             maxiter: 2000

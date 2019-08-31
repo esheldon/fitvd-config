@@ -91,7 +91,7 @@ mof:
     psf:
         ntry: 4
 
-        model: 'em3'
+        model: 'em5'
 
         em_pars:
             maxiter: 2000
