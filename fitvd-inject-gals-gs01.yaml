@@ -1,0 +1,102 @@
+parspace: 'galsim'
+use_kspace: False
+
+inject:
+    type: cosmos
+    # stars: /astro/u/esheldon/cosmos/prior/cosmos-stars.fits
+    galaxies: /astro/u/esheldon/cosmos/prior/cosmos-gals.fits
+
+hst_band: null
+
+# usually this is to skip the coadd
+skip_first_epoch:  False
+
+weight_type: 'uberseg'
+
+trim_images:
+    min_size: 32
+    max_size: 64
+
+# gaussian aperture weighted fluxes
+# gap:
+#     # in arcsec
+#     weight_fwhm: 2.5
+
+# ensure a box with specified radius is unmasked
+#cut_masked_center:
+#    radius_pixels: 3.0
+
+# no outliers in a coadd
+reject_outliers: False
+
+# for cosmos these are full meds.  Basically we expect the outlier
+# rejection to get everything except saturated stars and such,
+# which we will mask. So we don't do anything here.
+#
+# for the SN these are coadds which only BPM is set
+
+image_flagnames_to_mask: [
+    BPM,
+]
+
+# this is before adding additional masking, e.g. circular mask
+# does not apply for uberseg
+max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.  this is only
+# checked if using uberseg, or in _set_weight, if the weight map is being
+# modified, e.g. circular mask
+min_npix: 9
+
+use_mask: True
+
+radius_column: "iso_radius"
+
+max_fof_size: 25
+
+mof:
+
+    model: 'bdf'
+    # use_input_guesses: True
+
+    # number of times to try the fit if it fails
+    ntry: 2
+
+    # for guesses
+    detband: 2
+   
+    priors:
+        cen:
+            type: 'normal2d'
+            sigma: 0.001
+
+        g:
+            type: 'ba'
+            sigma: 0.2
+
+        hlr:
+            type: 'flat'
+            pars: [0.0001, 1000.0]
+
+        flux:
+            type: 'flat'
+            pars: [-1000.0, 1.0e+09]
+
+        fracdev:
+            type: 'normal'
+            mean: 0.5
+            sigma: 0.1
+            bounds: [0.0, 1.0]
+
+    psf:
+        ntry: 4
+
+        model: 'em5'
+
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
+
+    lm_pars:
+        ftol: 1.0e-7
+        xtol: 1.0e-7
