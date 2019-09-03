@@ -7,8 +7,62 @@ legend
 
 Current favored runs
 ============
-* run-cosmos-ugriz-mof08
+
+- run-ugriz-mof01
+    - combining COSMOS C3 X3 E2
+    - lots of failures in E2
+			   flagname     val      num  fraction
+	----------------------------------------------
+				no_data       2     5400  0.00962733
+			obj_failure      16     5713  0.0101854
+		  high_maskfrac      32       96  0.000171153
+		 too_few_pixels      64      576  0.00102692
+	----------------------------------------------
+				  total     511    11785  0.0210108
+		fof_size frac_fail
+		1 0.009164695866048624
+		2 0.020014295925661188
+		3 0.060755336617405585
+		4 0.11688311688311688
+		5 0.16666666666666666
+		6 0.0
+		7 0.0
+
+	- C3 not small
+			   flagname     val      num  fraction
+	----------------------------------------------
+				no_data       2     3002  0.00432183
+			obj_failure      16     5844  0.00841332
+		  high_maskfrac      32       27  3.88706e-05
+		 too_few_pixels      64      629  0.00090554
+	----------------------------------------------
+				  total     511     9502  0.0136796
+		fof_size frac_fail
+		1 0.0065261661146520595
+		2 0.01936545240893067
+		3 0.06388308977035491
+		4 0.12860892388451445
+		5 0.22972972972972974
+		6 0.4
+		7 0.5
+		8 1.0
+		9 0.0
+
+* run-sn-JHK-ff02
+    - C3/X3/E2 using models from run-ugriz-mof01
+
+injection runs
+==============
+
+- run-inject-stars03
+    - em5 looks great
+- run-inject-gals01
     - em5
+- run-inject-stars-gs01
+    - injection for linear pars
+
+all runs
+=========
 
 * run-cosmos-ugriz-mof07
     - run on coadds with new convergence
@@ -67,18 +121,7 @@ GS based
     - wide normals on log flux and log hlr
 
 
-injection runs
-==============
 
-- run-inject-stars03
-    - em5 looks great
-- run-inject-gals01
-    - em5
-- run-inject-stars-gs01
-    - injection for linear pars
-
-all runs
-=========
 
 - run-cosmos-ugriz-mof05
     - new masks
