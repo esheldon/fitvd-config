@@ -8,6 +8,9 @@ legend
 Current favored runs
 ============
 
+- run-ugriz-mof02
+    - fixed masking
+
 - run-ugriz-mof01
     - combining COSMOS C3 X3 E2
     - lots of failures in E2
