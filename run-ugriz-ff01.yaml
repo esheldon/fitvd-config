@@ -1,0 +1,21 @@
+seed: 9716
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-ugriz-ff01.yaml'
+model_pars_run: 'run-ugriz-sof01'
+# fof_run: 'run-ugriz-mof01'
+
+# nominal chunksize
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 1000
+
+des_bands: [u, g, r, i, z]
+video_bands: []
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
