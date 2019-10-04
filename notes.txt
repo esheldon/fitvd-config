@@ -1,3 +1,20 @@
+wide field tests, using shredder input to sub neighbors
+-------------------------------------------------------
+
+run-shred-test01
+    - em5 for psf, 1.0e-5 or tol, uberseg
+    just DES0432-4831 currently
+
+run-shred-test02
+    - em3 for psf, 1.0e-5 or tol, uberseg
+    just DES0432-4831 currently
+
+run-shred-test03
+    - em3 or em5 for psf, 1.0e-5 or tol, weight rather than uberseg,
+    relying on nbr subtraction
+    just DES0432-4831 currently
+
+
 SN etc. fields
 ------------
 
