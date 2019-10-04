@@ -2,18 +2,31 @@ wide field tests, using shredder input to sub neighbors
 -------------------------------------------------------
 
 run-shred-test01
-    - em5 for psf, 1.0e-5 or tol, uberseg
+    - em5 for psf, 1.0e-5 tol, uberseg
     just DES0432-4831 currently
 
 run-shred-test02
-    - em3 for psf, 1.0e-5 or tol, uberseg
+    - em3 for psf, 1.0e-5 tol, uberseg
     just DES0432-4831 currently
 
 run-shred-test03
-    - em3 or em5 for psf, 1.0e-5 or tol, weight rather than uberseg,
+    - em5 for psf, ml 0.001 tol, uberseg
     relying on nbr subtraction
     just DES0432-4831 currently
 
+    time dominated by em5 psf fitting now
+    if this looks good and we can use 0.001 for tol, can maybe speed
+    up psf fitting
+        - use guess from result of last psf fit
+        - use coellip with 5
+
+    the bright stars actually look very similar in size-mag diagram, but
+    there is a lot more scatter compared to 1.0e-5 (run-shred-test01) at
+    the faint end, even compared to using em3
+
+run-shred-test03
+    - em5, exp3, em tol 0.001 ml tol 0.0001, uberseg
+    - changing too much at once but will e going home soon...
 
 SN etc. fields
 ------------
