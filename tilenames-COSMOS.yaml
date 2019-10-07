@@ -1,5 +1,5 @@
 des_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-Y3A2_DEEP.fits.fz'
-uvista_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-UltraVISTA_DEEP-gp-corrected-insitu.fits.fz'
+uvista_pattern: '$MEDS_DIR/vd02/%(tilename)s/%(tilename)s_%(band)s_meds-UltraVISTA_DEEP.fits.fz'
 
 tilenames: [
     COSMOS_C01_r3764p01,

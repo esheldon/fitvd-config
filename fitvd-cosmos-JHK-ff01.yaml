@@ -2,6 +2,8 @@ parspace: 'ngmix-flux'
 
 hst_band: null
 
+match_field: 'id'
+
 # usually this is to skip the coadd
 skip_first_epoch:  False
 
@@ -45,8 +47,6 @@ min_npix: 9
 use_mask: True
 
 radius_column: "iso_radius"
-
-max_fof_size: 1000
 
 mof:
 

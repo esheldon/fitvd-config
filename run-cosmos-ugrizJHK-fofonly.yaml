@@ -1,0 +1,20 @@
+# just to generate fofs to includ mask flags form uvista
+seed: 1920
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-cosmos-JHK-ff01.yaml'
+
+# nominal chunksize
+chunksize: 1000
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 1000
+
+des_bands: [u, g, r, i, z]
+uvista_bands: [J, H, Ks]
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100
