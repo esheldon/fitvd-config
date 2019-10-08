@@ -1,0 +1,61 @@
+parspace: 'ngmix-flux'
+
+hst_band: null
+
+match_field: 'id'
+
+# usually this is to skip the coadd
+skip_first_epoch:  False
+
+# can't use uberseg since not available for video bands
+# weight_type: 'uberseg'
+# weight_type: 'circular-mask'
+weight_type: 'weight'
+
+trim_images:
+    min_size: 32
+    max_size: 64
+
+gap:
+    # in arcsec
+    weight_fwhm: 2.5
+
+# ensure a box with specified radius is unmasked
+#cut_masked_center:
+#    radius_pixels: 3.0
+
+reject_outliers: True
+
+# in the coadds only bit 0 is set, which basically means don't
+# use the pixel.  Since we work by name we need to put BPM here
+# for that
+
+image_flagnames_to_mask: [
+    BPM,
+]
+
+
+# this is before adding additional masking, e.g. circular mask
+# does not apply for uberseg
+max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.  this is only
+# checked if using uberseg, or in _set_weight, if the weight map is being
+# modified, e.g. circular mask
+min_npix: 9
+
+use_mask: True
+
+radius_column: "iso_radius"
+
+mof:
+
+    model: 'bdf'
+
+    psf:
+        ntry: 4
+
+        model: 'em5'
+        em_pars:
+            maxiter: 2000
+            tol: 1.0e-4
