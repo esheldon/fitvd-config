@@ -1,0 +1,19 @@
+seed: 8900
+
+fit_config: '$FITVD_CONFIG_DIR/fitvd-shred-test07.yaml'
+model_pars_run: 'run10'
+model_pars_run_type: 'shredder'
+
+chunksize: 250
+
+# groups larger than this threshold get put into their
+# own chunk
+threshold: 1000
+
+des_bands: [g, r, i, z]
+
+# meds file to use for FoF finding
+fof_band: 2
+
+# for condor
+jobs_per_sub: 100

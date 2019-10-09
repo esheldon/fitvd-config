@@ -8,7 +8,7 @@ match_field: 'number'
 # usually this is to skip the coadd
 skip_first_epoch:  True
 
-weight_type: 'uberseg'
+weight_type: 'weight'
 
 #trim_images:
 #    min_size: 32

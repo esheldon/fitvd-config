@@ -8,6 +8,9 @@ match_field: 'number'
 # usually this is to skip the coadd
 skip_first_epoch:  True
 
+# we are subtracting neighbors, but currently we don't have all neighbors fit,
+# just those that were part of groups.  So continue to use uberseg
+
 weight_type: 'uberseg'
 
 #trim_images:
@@ -107,5 +110,5 @@ mof:
             tol: 1.0e-4
 
     lm_pars:
-        ftol: 1.0e-5
-        xtol: 1.0e-5
+        ftol: 1.0e-7
+        xtol: 1.0e-7
