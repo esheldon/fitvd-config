@@ -32,6 +32,19 @@ run-shred-test05
     - same as run-shred-test01 but with using last guess in em fitting,
     speeds em stuff up by factor of 2
 
+run-shred-test06
+    - same as run-shred-test05 but with tol 1.0e-7
+    - more failures but the actual fluxes look quite similar
+
+run-shred-test07
+    - same as run-shred-test05 but with tol weight set to 'weight' rather than
+    'uberseg'
+    - failure rate higher
+    - fluxes agree extremely well
+
+conclusion, just stick with 1.0e-5 and uberseg
+
+
 SN etc. fields
 ------------
 
