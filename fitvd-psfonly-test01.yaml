@@ -1,0 +1,45 @@
+parspace: 'galsim'
+hst_band: null
+
+# we don't have id yet
+match_field: 'number'
+
+# usually this is to skip the coadd
+skip_first_epoch:  True
+
+weight_type: 'uberseg'
+
+reject_outliers: True
+
+image_flagnames_to_mask: [
+    BPM,
+    SATURATE,
+    INTERP,
+    BADAMP,
+    CRAY,
+    TRAIL,
+    EDGEBLEED,
+    EDGE,
+    STREAK,
+    NEAREDGE,
+    TAPEBUMP,
+]
+
+
+# this is before adding additional masking, e.g. circular mask
+# does not apply for uberseg
+max_maskfrac: 0.45
+
+# minimum number of unmasked pixels to be used in an epoch.  this is only
+# checked if using uberseg, or in _set_weight, if the weight map is being
+# modified, e.g. circular mask
+min_npix: 9
+
+use_mask: False
+
+radius_column: "iso_radius"
+
+mof:
+
+    # psf only
+    model: null
